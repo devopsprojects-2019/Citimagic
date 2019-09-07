@@ -1,7 +1,7 @@
 node {
    
    stage('Code Checkout') { 
-     git credentialsId: 'githubID', url: 'https://github.com/itrainbatman/maven_apps.git' 
+     git credentialsId: 'githubID', url: 'https://github.com/devopsprojects-2019/Citimagic.git' 
     }
    stage('Build') {
     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
