@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.manju.citimagic.ConfirmOrder">
+
+    <TextView
+        android:id="@+id/tvorderprocessed"
+        android:text="Your order is being procesed for :"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_marginTop="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvdateoforder"
+        android:text="Your order is being procesed for :"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/tvorderprocessed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvordeliveredfor"
+        android:text="Your order will be delivered at the following address :"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:maxLines="2"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/tvdateoforder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/tvnamedetails"
+        android:layout_below="@+id/tvordeliveredfor"
+        android:text="Name"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvndetails"
+        android:layout_below="@+id/tvordeliveredfor"
+        android:text="SampleText"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:layout_toRightOf="@+id/tvnamedetails"/>
+
+    <TextView
+        android:id="@+id/tvaddr"
+        android:layout_below="@+id/tvnamedetails"
+        android:text="Address"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvaddrdetails"
+        android:layout_below="@+id/tvnamedetails"
+        android:text="SampleText"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_toRightOf="@+id/tvaddr"/>
+
+    <TextView
+        android:id="@+id/tvpincode"
+        android:layout_below="@+id/tvaddr"
+        android:text="Pincode"
+        android:textSize="20sp"
+        android:layout_marginTop="50sp"
+        android:lines="1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvpincodedetails"
+        android:layout_below="@+id/tvaddr"
+        android:text="SampleText"
+        android:textSize="20sp"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_toRightOf="@+id/tvpincode"/>
+
+    <Button
+        android:id="@+id/confirmorder"
+        android:text="CONFIRM"
+        android:layout_marginTop="60sp"
+        android:layout_below="@+id/tvpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

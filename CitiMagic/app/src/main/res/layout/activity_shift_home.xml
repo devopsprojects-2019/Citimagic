@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShiftHome">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shiftHomeFromView"
+        >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+            <EditText
+            android:id="@+id/Sourceaddress"
+            android:hint="Complete Source Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbshiftflat"
+                android:text="Shift Flat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                />
+            <RadioButton
+                android:id="@+id/rbshiftbunglow"
+                android:text="Shift Bunglow"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                 />
+        </RadioGroup>
+    <LinearLayout
+        android:id="@+id/flatoptionsview"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1bhk"
+                android:text="1BHK"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb2bhk"
+                android:text="2BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb3bhk"
+                android:text="3BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rb4bhk"
+                android:text="4BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/twflatnum"
+            android:text="Floor N0."
+            android:textSize="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/minusbutton"
+            android:text="-"
+            android:textSize="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/twcount"
+            android:text="0"
+            android:textSize="25dp"
+            android:layout_weight="0.61"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/plusbutton"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_width="00dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <CheckedTextView
+            android:id="@+id/ctvpackingservice"
+            android:text="Request Packing Service ?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:checked="false"
+            android:gravity="center"
+            android:textSize="18sp"/>
+
+         <CheckedTextView
+             android:id="@+id/ctvloadingservice"
+             android:text="Request Loading Service ?"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+             android:checked="false"
+             android:gravity="center"
+             android:textSize="18sp"/>
+
+         <CheckedTextView
+             android:id="@+id/ctvelevatoravailable"
+             android:text="Elevator Available for use ?"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+             android:checked="false"
+             android:gravity="center"
+             android:textSize="18sp"/>
+         <Button
+             android:id="@+id/buttonnext"
+             android:text="NEXT >"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:textAlignment="center"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20sp"/>
+
+     </LinearLayout>
+</ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/destinationHomeFromView">
+    <LinearLayout
+        android:id="@+id/detinationdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    <TextView
+        android:id="@+id/destinationaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Complete Destination Address"
+        android:maxLines="3"
+        android:inputType="text"
+        />
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/destinshiftflat"
+            android:text="Shift Flat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/destinshiftbunglow"
+            android:text="Shift Bunglow"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/destinflatoptionsview"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/destin1bhk"
+                android:text="1BHK"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/destin2bhk"
+                android:text="2BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/destin3bhk"
+                android:text="3BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/destin4bhk"
+                android:text="4BHK"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:id="@+id/destinfloornum"
+                android:text="Floor N0."
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/destinminusbutton"
+                android:text="-"
+                android:textSize="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/destincount"
+                android:text="0"
+                android:textSize="25dp"
+                android:layout_weight="0.61"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/destinplusbutton"
+                android:text="+"
+                android:textSize="30sp"
+                android:layout_width="00dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckedTextView
+        android:id="@+id/ctvunpackingservice"
+        android:text="Request Unpacking Service ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <CheckedTextView
+        android:id="@+id/ctvunloadingservice"
+        android:text="Request Unloading Service ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <CheckedTextView
+        android:id="@+id/destinelevatoravailable"
+        android:text="Elevator Available for use ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="false"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
