@@ -4,20 +4,16 @@ node {
      git credentialsId: 'githubID', url: 'https://github.com/devopsprojects-2019/Citimagic.git' 
     }
    stage('Build') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-     sh 'mvn clean compile'
+    withMaven(jdk: 'JDK-1.8', gradle: 'Gradle') {
+     sh 'gradle clean compile'
       }
     }
    stage('Unit Test run') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-     sh 'mvn test'
+    withMaven(jdk: 'JDK-1.8', gradle: 'Gradle'') {
+     sh 'gradle test'
       } 
     }
-   stage('Sonar CodeAnalysis') {
-     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
-        sh 'mvn sonar:sonar -Dsonar.projectKey=maven_apps -Dsonar.organization=itrainbatman -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=0767bb0a33926d7ea765c0ef95c6f8d67cdd5987'
-      }  
-    }
+  
    
    stage('Deploy to Dev') {
      
