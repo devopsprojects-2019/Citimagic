@@ -9,7 +9,7 @@ node {
       }
     }
    stage('Unit Test run') {
-    withMaven(jdk: 'JDK-1.8', gradle: 'gradle'') {
+    withMaven(jdk: 'JDK-1.8', gradle: 'gradle') {
      sh 'gradle test'
       } 
     }
