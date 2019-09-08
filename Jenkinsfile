@@ -4,12 +4,12 @@ node {
      git credentialsId: 'githubID', url: 'https://github.com/devopsprojects-2019/Citimagic.git' 
     }
    stage('Build') {
-    withMaven(jdk: 'JDK-1.8', gradle: 'gradle') {
+    withGradle(jdk: 'JDK-1.8', gradle: 'gradle') {
      sh 'gradle clean compile'
       }
     }
    stage('Unit Test run') {
-    withMaven(jdk: 'JDK-1.8', gradle: 'gradle') {
+    withGradle(jdk: 'JDK-1.8', gradle: 'gradle') {
      sh 'gradle test'
       } 
     }
